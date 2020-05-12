@@ -1,0 +1,57 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+    <title>Jobs - Lucas Oliveira</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@500&display=swap" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+        <div id="wrapper2">
+            <h1>JOBS</h1>
+        </div>
+
+        <section class="cards">
+
+            {% for item in items %}
+            <div class="card" id="{{item.id}}">
+                <div class="card__image-container">
+                    <img src="http://i3.ytimg.com/vi/{{item.id}}/maxresdefault.jpg" alt=" Imagem de {{item.title}}">
+                    
+                </div>
+                <div class="card__content">
+                   <p>{{item.title}}</p> 
+                </div>
+                <div class="card__info">
+                    <p class="card__price">{{item.price}}</p>
+                </div>
+            </div>
+
+            {% endfor %}
+            
+                
+        </section>
+
+        <div class="modal-overlay">
+            <div class="modal">
+                <a class="close-modal">
+                    <i class="material-icons">close</i>
+                </a>
+               
+                <div class="modal-content">
+                    <iframe src="" frameborder="0"></iframe>
+                </div>
+            
+            </div>
+        </div>
+
+
+        <div id="links-footer" class="links">
+            <a href="https://github.com/luccaroli" target="_blank">Github</a>
+            <a href="https://twitter.com/luccaroli" target="_blank">Twitter</a>
+            <a href="https://www.linkedin.com/in/luccaroli" target="_blank">Linkedin</a>
+        </div>
+
+        <script src="scripts.js"></script>
+    
+{% endblock %}

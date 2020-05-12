@@ -97,7 +97,8 @@ div#links-footer {
 }
 
 .card {
-    background-color: #25292f
+    background-color: #25292f;
+    display: grid;
 }
 
 .card__image-container img {
