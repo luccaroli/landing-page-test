@@ -99,6 +99,7 @@ div#links-footer {
 .card {
     background-color: #25292f;
     display: grid;
+    cursor: pointer;
 }
 
 .card__image-container img {
@@ -161,4 +162,20 @@ iframe {
     height: 90%;
     position: absolute;
     top: 5%;
+}
+
+/* FEATURED */ 
+
+.card__image-container {
+    position: relative;
+}
+.featured {
+    position: absolute;
+    background: #f7d05f;
+    color: #111;
+    padding: 2px 8px;
+    left: 5px;
+    border-radius: 16px;
+    top: -10px;
+
 }
